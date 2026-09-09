@@ -33,7 +33,7 @@
 class Build < Formula
   desc "Bidirectional sync daemon for Interactor PM tasks/goals — works in any project"
   homepage "https://build.interactor.com"
-  version "1.4.0"
+  version "1.5.0"
 
   license "AGPL-3.0-or-later"
 
@@ -44,22 +44,22 @@ class Build < Formula
   on_macos do
     on_arm do
       url "https://build.interactor.com/api/v1/cli/asset?tag=cli%2Fv#{version}&file=ibuild-macos-arm64"
-      sha256 "5f00c5571586de0fc85306a15907df30013390a48dff8f428f59950017c4f0f2"
+      sha256 "27bfa6140004ea230dddb3614385059e689dc93db2a3a0d6fa67f140d0fdcb44"
     end
     on_intel do
       url "https://build.interactor.com/api/v1/cli/asset?tag=cli%2Fv#{version}&file=ibuild-macos-x64"
-      sha256 "ed631344c25c6d9f45cc30635e6f1951e5867d51095ccf6c13d32eb35c19084c"
+      sha256 "7538e633f25dae271ae80a1d7dd52a1ee4f35392ef3c35b12c3ef4e90fd527d2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://build.interactor.com/api/v1/cli/asset?tag=cli%2Fv#{version}&file=ibuild-linux-x64"
-      sha256 "07e1775ffc814f04b3fd4b163ebcab91cd0bf2764bbf103462c95c010d446352"
+      sha256 "2ce10a3fed9d65c90947c2470d2d9ad136ca78e2fb579fc22dd24abcda6b5a7b"
     end
     on_arm do
       url "https://build.interactor.com/api/v1/cli/asset?tag=cli%2Fv#{version}&file=ibuild-linux-arm64"
-      sha256 "de9d0379ded40c89ccf42dba07fe917baf892cf311ee44a1b7fb41bdab94fe12"
+      sha256 "6cd26bfe0448f1ed7495be7604955d869aeb728b5e31483a6a40ec04aecda538"
     end
   end
 
